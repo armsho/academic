@@ -1,5 +1,5 @@
 # AshoAcademic – Academic Website with publications, projects, and teaching sections
-Author: Arman Shokrollahi ([my website](http://asho.us){:target="_blank"})
+Author: Arman Shokrollahi (<a href="http://example.com/" target="_blank">my homepage</a>)
 
 ![Homepage](/academic.png "academic homepage")
 
