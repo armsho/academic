@@ -16,7 +16,7 @@ Key features:
 ---
 
 ## Demo
-A live demo can be found on [http:asho.us](my own homepage).<br>
+A live demo can be found on [my website](http://asho.us).<br>
 A live demo can be run locally (see setup below).  
 
 ---
