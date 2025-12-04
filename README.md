@@ -1,5 +1,5 @@
 # AshoAcademic – Academic Website with publications, projects, and teaching sections
-Author: Arman Shokrollahi ([my website](http://asho.us))
+Author: Arman Shokrollahi ([my website](http://asho.us){:target="_blank"})
 
 ![Homepage](/academic.png "academic homepage")
 
@@ -16,7 +16,7 @@ Key features:
 ---
 
 ## Demo
-A live demo can be found on [http:asho.us](my own homepage).<br>
+A live demo can be found on [http:asho.us](my own homepage){:target="_blank"}.<br>
 A live demo can be run locally (see setup below).  
 
 ---
@@ -45,7 +45,7 @@ node -v
 npm -v
 ```
 #### On Windows:
-1. Go to [Node.js official website](https://nodejs.org/en)
+1. Go to [Node.js official website](https://nodejs.org/en){:target="_blank"}
 2. Download and install LTS version (recommended).
 3. Open Command Prompt or PowerShell:
 ```bash
@@ -99,7 +99,7 @@ These passwords are used by the `/api/check-password` API route to unlock course
 cd <your project root wehere package.json exists>
 npm run dev
 ```
-Opens the `Next.js` development server on [http://localhost:3000](http://localhost:3000). <br>
+Opens the `Next.js` development server on [http://localhost:3000](http://localhost:3000){:target="_blank"}. <br>
 Automatically refreshes when you make changes to your code.
 
 ## Folder structure
