@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Install Node.js and npm
 
-## Getting Started
+Next.js requires Node.js ≥ 18.x. npm comes bundled with Node.js.
 
-First, run the development server:
+On Linux (Ubuntu/Debian):
+```bash
+# Update packages
+sudo apt update
+
+# Install Node.js 20.x (recommended latest LTS)
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# Check versions
+node -v
+npm -v
+```
+On Windows:
+1. Go to [Node.js official website](https://nodejs.org/en)
+2. Download and install LTS version (recommended).
+3. Open Command Prompt or PowerShell:
+```bash
+node -v
+npm -v
+```
+On MacOS:
+```# Using Homebrew
+brew install node
+
+# Check versions
+node -v
+npm -v
+bash
+```
+## Clone your project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/armsho/academic.git
+cd academic
+```
+## Install project dependencies
+
+After cloning, run:
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will read package.json and install:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<ol>
+<li>Next.js (App Router, React framework)</li>
+<li>React and React-DOM</li>
+<li>Tailwind CSS (for styling)</li>
+<li>React Icons</li>
+<li>Any other npm packages you have in `package.json`.</li>
+</ol>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+After this, you should have a `node_modules/` folder in your project.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
