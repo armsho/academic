@@ -1,7 +1,7 @@
 # AshoAcademic – Academic Website with publications, projects, and teaching sections
 Author: Arman Shokrollahi ([my website](http://asho.us))
 
-![Homepage](/academic.jpg "academic homepage")
+![Homepage](/academic.png "academic homepage")
 
 I developed this clean, sleek and user-friendly academic website using **Next.js** and **React**. 
 It includes pages for **Teaching**, **Research**, and **Publications**, designed for easy content management and interactive features.  
