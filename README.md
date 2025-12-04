@@ -100,7 +100,27 @@ npm run dev
 Opens the `Next.js` development server on [http://localhost:3000](http://localhost:3000). <br>
 Automatically refreshes when you make changes to your code.
 
+## Folder structure
 
+```bash
+academic/
+├─ app/
+│  ├─ api/             # API routes (e.g., check-password)
+│  ├─ components/      # Navbar, Footer, Modal, etc. (reusable React components)
+│  ├─ projects/        # Projects page
+│  ├─ publications/    # Publications page
+│  ├─ teaching/        # Teaching page (password protected)
+│  ├─ globals.css      # Global styles
+│  ├─ layout.tsx       # App layout
+│  └─ page.tsx         # Home page (main)
+├─ node_modules/
+├─ public/             # Images, PDFs, slides, videos
+├─ package.json
+├─ next.config.js
+├─ tailwind.config.js
+└─ .env.local          # Course passwords (hidden)
+
+```
 
 
 
