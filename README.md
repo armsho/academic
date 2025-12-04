@@ -1,8 +1,35 @@
+# AshoAcademic – Academic Website with publications, projects, and teaching sections
+Author: Arman Shokrollahi ([my website](http://asho.us))
+
+**AshoAcademic** is an academic website built with **Next.js** and **React**.  
+It includes pages for **Teaching**, **Research**, and **Publications**, designed for easy content management and interactive features.  
+
+Key features:
+- **Teaching Page:** Password-protected courses using `.env.local`. Access is verified via the `/api/check-password` API route.  
+- **Research Page:** List of research projects or lab activities.  
+- **Publications Page:** List of publications with abstracts, BibTeX download, PDF, slides, and video links.  
+- Responsive design with **Tailwind CSS** for modern look.  
+- Client-side interactivity with **React Hooks** and **modals**.  
+
+---
+
+## Demo
+A live demo can be found on [http:asho.us](my own homepage).<br>
+A live demo can be run locally (see setup below).  
+
+---
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js ≥ 18.x** (includes npm)
+
 ## Install Node.js and npm
 
-Next.js requires Node.js ≥ 18.x. npm comes bundled with Node.js.
+`Next.js` requires `Node.js ≥ 18.x`. `npm` comes bundled with `Node.js`.
 
-On Linux (Ubuntu/Debian):
+#### On Linux (Ubuntu/Debian):
 ```bash
 # Update packages
 sudo apt update
@@ -15,7 +42,7 @@ sudo apt install -y nodejs
 node -v
 npm -v
 ```
-On Windows:
+#### On Windows:
 1. Go to [Node.js official website](https://nodejs.org/en)
 2. Download and install LTS version (recommended).
 3. Open Command Prompt or PowerShell:
@@ -23,7 +50,7 @@ On Windows:
 node -v
 npm -v
 ```
-On MacOS:
+#### On MacOS:
 ```# Using Homebrew
 brew install node
 
@@ -32,15 +59,9 @@ node -v
 npm -v
 bash
 ```
-## Clone your project
 
-```bash
-git clone https://github.com/armsho/academic.git
-cd academic
-```
 ## Install project dependencies
 
-After cloning, run:
 ```bash
 npm install
 ```
@@ -57,8 +78,27 @@ This will read package.json and install:
 
 After this, you should have a `node_modules/` folder in your project.
 
+## Configure environment variables
 
+Create a `.env.local file` in the project root (if it doesn't exist in my files):
 
+```bash
+# Teaching page course passwords
+COURSE_ML_PASSWORD=mlpassword
+COURSE_AI_PASSWORD=aipassword
+COURSE_CV_PASSWORD=cvpassword
+COURSE_QC_PASSWORD=qcpassword
+```
+These passwords are used by the `/api/check-password` API route to unlock course info. I mean, on the Teaching page, each course is password-protected. Set your course passwords in `.env.local` so they remain hidden from users. Once a course is unlocked, a cookie stores access for 7 days, so users don’t need to enter the password again during that period.
+
+## Run the development server
+
+```bash
+cd <your project root wehere package.json exists>
+npm run dev
+```
+Opens the `Next.js` development server on [http://localhost:3000](http://localhost:3000). <br>
+Automatically refreshes when you make changes to your code.
 
 
 
