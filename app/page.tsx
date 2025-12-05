@@ -39,7 +39,8 @@ export default function Home() {
             <h1 className="text-5xl font-bold mb-4 hidden lg:block">Arman Shokrollahi</h1>
 
             <p className="text-gray-600 text-lg leading-relaxed">
-              I am currently a nonresident research scientist at Google Research, part of the Pittsburgh Google Cloud group. Prior experience at Microsoft and Johnson Controls. M.S. & Ph.D. in Computer Science from <a href="https://github.com/YOURHANDLE" target="_blank">Carnegie Mellon University</a> under Prof. Alan Friez. 
+             I noticed a growing demand for a refined and functional website template specifically crafted for academics, including professors, researchers, and graduate students. Such a platform should combine clarity, efficiency, and aesthetic appeal while offering all the essential tools needed for academic presentation. With this goal in mind, I created and refined this template, focusing on clean design, ease of customization, and long-term maintainability. The layout supports showcasing publications, ongoing projects, teaching activities, and professional achievements in a structured and visually balanced way. I hope this template provides a solid foundation for building a strong academic presence online. You can access the source code and contribute to its development on 
+              <a href="https://github.com/armsho/academic" target="_blank">my GitHub respository</a>.
             </p>
 
             <div className="mt-8">
