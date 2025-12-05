@@ -1,5 +1,5 @@
 # AshoAcademic – Academic Website with publications, projects, and teaching sections
-Author: Arman Shokrollahi ([my homepage](http://asho.us)</a>)
+Author: Arman Shokrollahi -- [my homepage](https://asho.us)
 
 ![Homepage](/academic.png "academic homepage")
 
@@ -16,7 +16,7 @@ Key features:
 ---
 
 ## Demo
-A live demo can be found on [my website](http://asho.us).<br>
+A live demo can be found on [Vercel(https://academic1.vercel.app/).<br>
 A live demo can be run locally (see setup below).  
 
 ---
@@ -114,20 +114,5 @@ academic/
 ├─ next.config.js
 ├─ tailwind.config.js
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
