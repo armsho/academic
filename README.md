@@ -82,16 +82,8 @@ After this, you should have a `node_modules/` folder in your project.
 
 ## Configure environment variables
 
-Create a `.env.local file` in the project root (if it doesn't exist in my files):
-
-```bash
-# Teaching page course passwords
-COURSE_ML_PASSWORD=mlpassword
-COURSE_AI_PASSWORD=aipassword
-COURSE_CV_PASSWORD=cvpassword
-COURSE_QC_PASSWORD=qcpassword
-```
-These passwords are used by the `/api/check-password` API route to unlock course info. I mean, on the Teaching page, each course is password-protected. Set your course passwords in `.env.local` so they remain hidden from users. Once a course is unlocked, a cookie stores access for 7 days, so users don’t need to enter the password again during that period.
+Teaching courses are password-protectetd. The passwords are defined inside `passwords/passwords.json`. 
+These passwords are used by the `/api/check-password` API route to unlock course info. I mean, on the Teaching page, each course is password-protected. Set your course passwords in `passwords.json` so they remain hidden from users. Once a course is unlocked, a cookie stores access for 7 days, so users don’t need to enter the password again during that period.
 
 ## Run the development server
 
@@ -115,13 +107,12 @@ academic/
 │  ├─ globals.css      # Global styles
 │  ├─ layout.tsx       # App layout
 │  └─ page.tsx         # Home page (main)
-├─ node_modules/
 ├─ public/             # Images, PDFs, slides, videos
+├─ passwords
+│  ├─ passwords.json   # Course passwords
 ├─ package.json
 ├─ next.config.js
 ├─ tailwind.config.js
-└─ .env.local          # Course passwords (hidden)
-
 ```
 
 
