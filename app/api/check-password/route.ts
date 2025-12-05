@@ -1,23 +1,16 @@
 import { NextResponse } from "next/server";
+import passwords from "../../../passwords/passwords.json";
 
-const passwords: Record<string, string> = {
-  ml: process.env.COURSE_PASSWORD_ML || "",
-  ai: process.env.COURSE_PASSWORD_AI || "",
-  cv: process.env.COURSE_PASSWORD_CV || "",
-  qc: process.env.COURSE_PASSWORD_QC || "",
-};
+export async function POST(request: Request) {
+  const { courseId, password } = await request.json();
 
-export async function POST(req: Request) {
-  try {
-    const { courseId, password } = await req.json();
-
-    if (passwords[courseId] === password) {
-      return NextResponse.json({ allowed: true });
-    }
-
+  if (!courseId || !password)
     return NextResponse.json({ allowed: false });
-  } catch (err) {
-    return NextResponse.json({ allowed: false }, { status: 400 });
-  }
+
+  const correct = passwords[courseId];
+
+  return NextResponse.json({
+    allowed: correct === password,
+  });
 }
 
