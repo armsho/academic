@@ -1,5 +1,12 @@
 import { NextResponse } from "next/server";
-import passwords from "../../../passwords/passwords.json";
+import passwordsJson from "../../../passwords/passwords.json";
+
+// Define a type for your passwords
+type Passwords = {
+  [key: string]: string;
+};
+
+const passwords: Passwords = passwordsJson;
 
 export async function POST(request: Request) {
   try {
