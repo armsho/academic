@@ -16,7 +16,7 @@ Key features:
 ---
 
 ## Demo
-A live demo can be found on [Vercel(https://academic1.vercel.app/).<br>
+A live demo can be found on [Vercel](https://academic1.vercel.app/).<br>
 A live demo can be run locally (see setup below).  
 
 ---
