@@ -7,7 +7,7 @@ I developed this clean, sleek and user-friendly academic website using **Next.js
 It includes pages for **Teaching**, **Research**, and **Publications**, designed for easy content management and interactive features.  
 
 Key features:
-- **Teaching Page:** Password-protected courses using `.env.local`. Access is verified via the `/api/check-password` API route.  
+- **Teaching Page:** Password-protected courses.
 - **Research Page:** List of research projects or lab activities.  
 - **Publications Page:** List of publications with abstracts, BibTeX download, PDF, slides, and video links.  
 - Responsive design with **Tailwind CSS** for modern look.  
@@ -114,5 +114,3 @@ academic/
 ├─ next.config.js
 ├─ tailwind.config.js
 ```
-
-
